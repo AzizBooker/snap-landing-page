@@ -8,34 +8,64 @@
   <link rel="stylesheet" href="./styles/style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+ 
+  
+  <title> Intro section with dropdown navigation</title>
 
 
 </head>
 <body>
 
- <nav> 
-   
-   <div class="left-aligned-nav">
+ <nav > 
+  
+   <div class="left-aligned-nav ">
     <img src="./images/logo.svg" alt="" srcset=""> 
- ,<a href="#"> Features</a>
- <a href="#"> Company</a>
- <a href="#"> Careers </a>
- <a href="#"> About </a>
+  <div class="dropdown">
+ <a class="hide-on-mobile" href="#"> Features <img src="./images/icon-arrow-down.svg" alt=""></a>
+ <div class="dropdown-content">
+   <a href="#">TodoList</a>
+   <a href="#">Calender</a>
+   <a href="#">Reminders</a>
+   <a href="#">Planning</a>
 </div>
-<div class="right-aligned-nav">
- <a href="#"> Login</a>
- <a href=""> Register</a>
 </div>
+<div class="dropdown">
+ <a class="hide-on-mobile" href="#"> Company <img src="./images/icon-arrow-down.svg" alt=""></a>
+ <div class="dropdown-content">
+  <a href="#">History</a>
+  <a href="#">Our Team</a>
+  <a href="#">Blog</a>
+ </div>
+</div>
+ <a class="hide-on-mobile" href="#"> Careers </a>
+ <a class="hide-on-mobile" href="#"> About </a>
+</div>
+<div class="right-aligned-nav ">
+ <a class="hide-on-mobile" href="#"> Login</a>
+ <a class="hide-on-mobile" href=""><button>Register</button> </a>
+</div>
+<img class="hide-on-desktop mobile-nav" src="./images/icon-menu.svg" alt="">
 </nav>
 
-  Make remote work
+<section class="hero">
+  <div class="hero-left">
+ <h1 class="hide-on-mobile"> Make <br> remote work</h1>
+ <h1 class="hide-on-desktop"> Make  remote work</h1>
 
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
+ <p> Get your team in sync, no matter your location. Streamline processes, 
+  create team rituals, and watch productivity soar. </p>
 
-  Learn more
-  
-  
+ <button>Learn more</button> 
+ <div class="hero-left-logos">
+   <img src="./images/client-databiz.svg" alt="" srcset="">
+   <img src="./images/client-audiophile.svg" alt="" srcset="">
+   <img src="./images/client-maker.svg" alt="">
+   <img src="./images/client-meet.svg" alt="">
+ </div>
+ </div>
+  <div class="hero-right">
+    <img class="hero-image" src="./images/image-hero-desktop.png" alt="" srcset="">
+  </div>
+</section>
 </body>
 </html>
