@@ -1,0 +1,82 @@
+body{
+   background-color: $almostWhite;
+    overflow-x: hidden;
+    padding: 1.2rem;
+    padding-top: 2rem;
+}
+h1,h2,h3,h4,h5,h6,p{
+    color: $white;
+    
+
+}
+h1{
+   
+    font-size: 3rem;
+    letter-spacing: .5rem;
+}
+h2{
+    font-size: 2rem;
+   
+}
+p{
+    
+    font-size: 1.125rem;
+  
+}
+a{
+    font-family: $fontEpilogue;
+    font-size: 1rem;
+    color: $almostBlack;
+    
+    font-weight: 500;
+   
+}
+ul{
+    list-style: none;
+    
+}
+li{
+
+}
+a{
+    text-decoration: none;
+    transition: ease-in-out 100ms;
+    
+}
+
+.center{
+    margin: 0 auto;
+}
+.center-mobile-image{ //Centers a mobile image if contained within a blocl level element
+     position: relative;
+        right: 0%;
+       // display: block;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: cover;
+        height: 50%;
+        width: 100vw;
+}
+.image{
+    &-cover{
+        
+    object-fit: cover;
+    }
+    &-contain{
+        object-fit: contain;
+    }
+    &-scale-down{
+        object-fit: scale-down;
+    }
+}
+
+.hide-on-mobile{
+    @include breakpoint-down('small'){
+        display: none;
+    }
+}
+.hide-on-desktop{
+@include breakpoint-up('medium'){
+    display: none;
+}
+}
